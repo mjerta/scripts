@@ -71,6 +71,12 @@ if eval $mvnCommand; then
     echo "Changing directory to: $fullPath"
     cd "$fullPath" || { echo "Failed to change directory to $fullPath"; exit 1; }
 
+    # Rename .gitignore file if it exists
+    if [ -f "gitignore" ]; then
+      echo "Renaming gitignore to .gitignore"
+      mv "gitignore" ".gitignore"
+    fi
+
     # Echo the full command
     echo "Executed command:"
     echo $mvnCommand
