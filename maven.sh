@@ -18,6 +18,7 @@ mvn archetype:generate \
     -DgroupId=${groupId} \
     -DartifactId=${projectName} \
     -Dversion=${version} \
+    -Dname=${projectName} \
     -DinteractiveMode=false
 
 # Print a message indicating that the project has been generated
