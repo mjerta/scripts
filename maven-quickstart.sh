@@ -1,14 +1,14 @@
 #!/bin/bash
 
-read -p "Enter the project name: " projectName
+# Prompt the user for the project name
+read -p "Enter the project name: " PROJECT_NAME
 
+# Generate the Maven project
 mvn archetype:generate \
     -DgroupId=nl.mpdev \
-    -DartifactId=${projectName} \
+    -DartifactId=${PROJECT_NAME} \
     -DarchetypeArtifactId=maven-archetype-quickstart \
     -DinteractiveMode=false
 
-echo "Project ${projectName} has been generated successfully."
-
-cd "${projectName}" || exit 1
-
+# Inform the user the project has been created
+echo "Project ${PROJECT_NAME} has been generated successfully."
