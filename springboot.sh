@@ -40,3 +40,4 @@ if [ -f "gitignore" ]; then
 fi
 
 echo "Project $PROJECT_NAME has been created and setup successfully."
+exec bash

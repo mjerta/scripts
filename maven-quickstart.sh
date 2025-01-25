@@ -12,3 +12,6 @@ mvn archetype:generate \
 
 # Inform the user the project has been created
 echo "Project ${PROJECT_NAME} has been generated successfully."
+
+cd $(pwd)/${PROJECT_NAME}
+exec bash
