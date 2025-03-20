@@ -23,7 +23,6 @@ scanimage --device "airscan:w0:CANON INC. TS3700 series" --format=$scan_format -
 
 # Convert to PDF if needed
 if [[ "$format" == "pdf" ]]; then
-    convert ${filename}.png ${filename}.pdf
     magick ${filename}.png ${filename}.pdf
     rm ${filename}.png # Remove temp file
     echo "Scan complete: ${filename}.pdf"
