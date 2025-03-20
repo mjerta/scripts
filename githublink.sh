@@ -15,8 +15,4 @@ full_url="${repo_url}/tree/${current_branch}"
 # Output the final URL
 echo "$full_url"
 
-<<<<<<< HEAD
-=======
 xdg-open "$full_url"
-
->>>>>>> 866398d (Add some adjustments)
